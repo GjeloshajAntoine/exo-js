@@ -29,5 +29,19 @@ for (para of paragraphes) {
 var pretag=document.getElementsByTagName("pre")
 
 for (pre of pretag) {
-
+  pre.style.color="pink";
+  pre.style.backgroundColor="cyan";
+  pre.style.borderTop="3px solid red";
+  pre.style.borderBottom="3px solid red";
 }
+var h3=document.getElementsByTagName("h3")[0]
+h3.innerHTML="<em>Itelic title ! yeah !</em>";
+
+var h2=document.getElementsByTagName("h2")[0]
+h2.innerHTML="<strong>HTML doens't work !</strong>";
+
+
+
+//part4
+
+firstUl=document.getElementsByTagName("ul")[0]
