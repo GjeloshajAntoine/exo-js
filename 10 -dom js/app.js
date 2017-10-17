@@ -14,7 +14,7 @@ bgSilvers.classList.remove("bg-lime");
 var quote =document.getElementsByTagName("blockquote")[0];
 quote.classList.add("bg-white");
 
-
+// part 2
 var table = document.querySelector("#my-table");
 table.classList.add("bg-purple");
 
@@ -44,4 +44,28 @@ h2.innerHTML="<strong>HTML doens't work !</strong>";
 
 //part4
 
-firstUl=document.getElementsByTagName("ul")[0]
+firstUl=document.getElementsByTagName("ul")[0];
+var li = document.createElement("li");
+li.innerHTML="Mon meilleur ami est <a href='http://www.google.com'>Google</a>";
+firstUl.append(li);
+
+var lastLi=document.querySelector("ul li:nth-last-child(1)");
+var firstA=lastLi.children[0];
+firstA.style.color="#EBFF00";
+
+//ex 4
+
+firstOl=document.getElementsByTagName("ol")[0];
+for (var i = 0; i < firstOl.children.length; i++) {
+  firstOl.children[i]
+  console.log(firstOl.children[i]);
+  firstOl.removeChild(firstOl.children[i])
+}
+
+var unTableau=["Silent Teacher","Code Monkey", "CodeCombat"];
+
+for (var i = 0; i < unTableau.length; i++) {
+  var unElement=document.createElement("li");
+  unElement.innerHTML=unTableau[i];
+  firstOl.appendChild(unElement);
+}
