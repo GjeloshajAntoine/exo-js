@@ -13,6 +13,7 @@ req.open('get', './data.json', true);
 req.send();
 */
 
+
 function sleep(miliseconds) {
    var currentTime = new Date().getTime();
 
