@@ -1,0 +1,24 @@
+div{
+  width: 100px;
+  height:100px;
+  background-color: red;
+}
+#character{
+
+}
+#up{
+
+}
+#left{
+
+}
+#right{
+
+}
+#down{
+
+}
+
+.highlight{
+  opacity: 0.5;
+}

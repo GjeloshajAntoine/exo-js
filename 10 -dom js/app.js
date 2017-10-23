@@ -53,14 +53,21 @@ var lastLi=document.querySelector("ul li:nth-last-child(1)");
 var firstA=lastLi.children[0];
 firstA.style.color="#EBFF00";
 
-//ex 4
+// ex 4
+//
+// firstOl=document.getElementsByTagName("ol")[0];
+// for (var i = 0; i < firstOl.children.length; i++) {
+//   firstOl.children[i]
+//   console.log(firstOl.children[i]);
+//   firstOl.removeChild(firstOl.children[i])
+// }
 
 firstOl=document.getElementsByTagName("ol")[0];
-for (var i = 0; i < firstOl.children.length; i++) {
-  firstOl.children[i]
-  console.log(firstOl.children[i]);
-  firstOl.removeChild(firstOl.children[i])
+
+while (firstOl.children.length > 0) {
+  firstOl.removeChild(firstOl.children[0]);
 }
+
 
 var unTableau=["Silent Teacher","Code Monkey", "CodeCombat"];
 
