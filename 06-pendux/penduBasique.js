@@ -17,9 +17,21 @@ function guessLetter() {
       }
       if (lettrebonne) {
         alert("Bonne lettre")
+      }else if (isAlreadyGuessed(userInput)) {
+        alert("Vous l'avez déjà trouvé celle là ")
       }else{
         alert("mauvaise lettre")
       }
     }
 }
 guessLetter();
+
+function isAlreadyGuessed(letter) {
+  var already=false;
+  for (var i = 0; i < guessedletters.length; i++) {
+    if (letter == guessedletters[i]) {
+      already=true;
+    }
+  }
+  return  already;
+}
